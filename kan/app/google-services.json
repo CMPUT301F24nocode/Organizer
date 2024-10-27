@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "958298716101",
+    "project_id": "kanishk-52c24",
+    "storage_bucket": "kanishk-52c24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958298716101:android:e1148c575a19314289fdac",
+        "android_client_info": {
+          "package_name": "com.example.kan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp2V3rV3u4B1BDiie8UKg83OSyFhouMQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

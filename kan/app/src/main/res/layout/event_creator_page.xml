@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp">
+
+    <!-- EditText for Event Name -->
+    <EditText
+        android:id="@+id/editTextEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Event Name"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:minHeight="50dp" />
+
+    <!-- EditText for Event ID -->
+    <EditText
+        android:id="@+id/editTextEventID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEventName"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Event ID"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:minHeight="50dp" />
+
+    <!-- EditText for Description -->
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEventID"
+        android:layout_marginTop="12dp"
+        android:hint="Enter Description"
+        android:background="@android:drawable/editbox_background"
+        android:minHeight="100dp"
+        android:padding="12dp"
+        android:textColor="#000000" />
+
+    <!-- EditText for Date -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDescription"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Date"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:minHeight="50dp" />
+
+    <!-- EditText for Location -->
+    <EditText
+        android:id="@+id/editTextLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDate"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Location"
+        android:background="@android:drawable/editbox_background"
+        android:padding="12dp"
+        android:textColor="#000000"
+        android:minHeight="50dp" />
+
+    <!-- Button to send the text -->
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLocation"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:text="Send"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
