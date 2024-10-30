@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Muhtasi3MyBookWishlist" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <!-- Define your primary colors (optional) -->
+        <item name="colorPrimary">@color/purple_Lighter</item>
+        <item name="colorPrimaryVariant">@color/purple_Darker</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- You can also define other theme colors -->
+        <item name="colorAccent">@color/teal</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/purple_Darker</item>
+
+        <!-- Control the appearance of the status bar -->
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

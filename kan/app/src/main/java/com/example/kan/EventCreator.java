@@ -31,9 +31,9 @@ public class EventCreator extends AppCompatActivity {
         setContentView(R.layout.event_creator_page);
 
         // Initialize views
-        editTextEventName = findViewById(R.id.editTextEventName);
+        editTextEventName = findViewById(R.id.textViewEventName);
         editTextEventID = findViewById(R.id.editTextEventID);
-        editTextDescription = findViewById(R.id.editTextDescription);
+        editTextDescription = findViewById(R.id.editTextDetails);
         editTextDate = findViewById(R.id.editTextDate);
         editTextLocation = findViewById(R.id.editTextLocation);
         sendBtn = findViewById(R.id.buttonSend);

@@ -87,15 +87,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Set long click listener for ListView to delete an event
+        // Inside your existing long-click listener (to show the option for editing an event)
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                // Show confirmation dialog before deleting
-                showDeleteConfirmationDialog(position);
-                return true; // Returning true indicates the long-click event is handled
+                // Show a dialog with options to Edit or Delete the event
+                AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                builder.setTitle("Select an Action")
+                        .setItems(new CharSequence[]{"Edit", "Delete"}, (dialog, which) -> {
+                            if (which == 0) {
+                                // Edit option selected
+                                String eventKey = eventKeys.get(position);
+                                String eventName = itemList.get(position);
+                                String eventDesc = eventDescription.get(position);
+
+                                // Start EventEditorActivity, passing the event details
+                                Intent intent = new Intent(MainActivity.this, EventEditActivity.class);
+                                intent.putExtra("eventKey", eventKey);
+                                intent.putExtra("eventName", eventName);
+                                intent.putExtra("description", eventDesc);
+                                startActivity(intent);
+                            } else if (which == 1) {
+                                // Delete option selected
+                                showDeleteConfirmationDialog(position);
+                            }
+                        })
+                        .show();
+                return true;
             }
         });
+
     }
 
     // Method to fetch data from Firebase

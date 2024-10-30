@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditBook">
+
+    <EditText
+        android:id="@+id/BookTitleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/book_title"
+        android:maxLength="50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/AuthorText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/author_name"
+        android:maxLength="30"
+        app:layout_constraintTop_toBottomOf="@id/BookTitleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/genreText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="92dp"
+        android:hint="@string/genre"
+        android:maxLength="30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AuthorText" />
+
+    <EditText
+        android:id="@+id/YearText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/publication_year"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/genreText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <CheckBox
+        android:id="@+id/ReadOrUnread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mark_as_read"
+        app:layout_constraintTop_toBottomOf="@id/YearText"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ReadOrUnread" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

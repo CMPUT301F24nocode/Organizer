@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">muhtasi3-MyBookWishlist</string>
+    <string name="book_title">Book Title</string>
+    <string name="author_name">Author Name</string>
+    <string name="genre">Genre</string>
+    <string name="publication_year">Publication Year</string>
+    <string name="mark_as_read">Mark as Read</string>
+    <string name="save">Save</string>
+    <string name="read_or_unreadTextView">Read Status</string>
+    <string name="genreTextView">Genre</string>
+    <string name="author_nameTextView">Author Name</string>
+    <string name="book_titleTextView">Book Title</string>
+</resources>
